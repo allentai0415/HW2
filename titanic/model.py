@@ -54,7 +54,7 @@ print("Confusion Matrix:\n", conf_matrix)
 accuracy = accuracy_score(y_val, y_pred)
 print("Accuracy:", accuracy)
 
-# Predict on the test set and save the results
+# Predict on the test set and save the  results
 predictions = model.predict(X_test)
 output = pd.DataFrame({'PassengerId': test_data.PassengerId, 'Survived': predictions})
 output.to_csv('submission.csv', index=False)
